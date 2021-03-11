@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
 class NeumorphicApp extends StatelessWidget {
   final String title;
