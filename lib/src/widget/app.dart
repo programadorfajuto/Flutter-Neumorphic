@@ -140,7 +140,7 @@ class NeumorphicApp extends StatelessWidget {
               showSemanticsDebugger: showSemanticsDebugger,
               shortcuts: shortcuts,
               actions: actions,
-              debugShowMaterialGrid: debugShowMaterialGrid),
+              debugShowMaterialGrid: debugShowMaterialGrid).modular(),
         ),
       ),
     );
