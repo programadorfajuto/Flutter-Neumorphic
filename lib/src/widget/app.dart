@@ -111,7 +111,7 @@ class NeumorphicApp extends StatelessWidget {
       child: Builder(
         builder: (context) => IconTheme(
           data: NeumorphicTheme.currentTheme(context).iconTheme,
-          child: MaterialApp(
+          child: MaterialApp.router(
               title: title,
               color: color,
               theme: materialTheme,
@@ -141,7 +141,9 @@ class NeumorphicApp extends StatelessWidget {
               showSemanticsDebugger: showSemanticsDebugger,
               shortcuts: shortcuts,
               actions: actions,
-              debugShowMaterialGrid: debugShowMaterialGrid).modular(),
+              debugShowMaterialGrid: debugShowMaterialGrid,
+              routerConfig: Modular.routerConfig,
+          ),
         ),
       ),
     );
